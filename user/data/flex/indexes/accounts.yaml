@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1714990058
+count: 1
+index:
+  admin:
+    storage_key: admin
+    storage_timestamp: 1714990058
+    key: admin
+    email: admin@test.com
