@@ -1,0 +1,26 @@
+<aside class="site-sidebar">
+    <div class="sidebar-content">
+        <ul class="page-list">
+            {% for page in pages.children.visible %}
+                {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }}">
+                    <a href="{{ page.url }}">
+                        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                        {{ page.menu }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <h3>Recent</h3>
+        <ul class="page-list">
+            {% for page in pages.children.visible.order('date', 'desc').slice(0, 5) %}
+                {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                <li class="{{ current_page }}">
+                    <a href="{{ page.url }}">
+                        {{ page.menu }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>

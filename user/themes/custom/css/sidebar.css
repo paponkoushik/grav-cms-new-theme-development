@@ -1,0 +1,48 @@
+.site-sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    overflow-y: auto;
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-content {
+    margin: 0 auto;
+}
+
+.page-list {
+    list-style: none;
+    padding: 0;
+}
+
+.page-list li {
+    margin-bottom: 10px;
+}
+
+.page-list li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-list li a:hover {
+    color: #24778e;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .site-sidebar {
+        width: 100%;
+        max-width: 300px;
+        transform: translateX(-100%);
+    }
+
+    .site-sidebar.show {
+        transform: translateX(0);
+    }
+}

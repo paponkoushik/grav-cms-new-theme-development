@@ -1,0 +1,9 @@
+<nav class="site-navigation">
+    <ul>
+        {% for page in pages %}
+            {% if page.visible %}
+                <li><a href="{{ page.url }}">{{ page.menu }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

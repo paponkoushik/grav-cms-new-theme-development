@@ -1,0 +1,30 @@
+.site-navigation {
+    background-color: #333; /* Background color of the navigation */
+    padding: 10px 0; /* Padding around the navigation */
+}
+
+.site-navigation ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.site-navigation ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+}
+
+.site-navigation ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.site-navigation ul li a {
+    color: #fff; /* Text color of the navigation links */
+    text-decoration: none; /* Remove underline from the links */
+    padding: 10px 15px; /* Padding around the links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.site-navigation ul li a:hover {
+    background-color: #555; /* Background color on hover */
+}

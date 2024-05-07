@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/gravAdmin/user/config/system.yaml',
-    'modified' => 1714991698,
-    'size' => 4461,
+    'modified' => 1715057217,
+    'size' => 4457,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -50,7 +50,7 @@ return [
             'dirs' => [
                 0 => 'page://'
             ],
-            'theme' => 'antimatter',
+            'theme' => 'custom',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'

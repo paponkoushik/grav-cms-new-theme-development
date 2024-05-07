@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1714991481,
-    'checksum' => '8878018b8d029b22fd7ef4fdfd442b97',
+    'timestamp' => 1715056719,
+    'checksum' => '1443ac12cd16d875bca28a93d4b0d718',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -78,6 +78,10 @@ return [
             'themes/antimatter' => [
                 'file' => 'user/themes/antimatter/blueprints.yaml',
                 'modified' => 1714991476
+            ],
+            'themes/custom' => [
+                'file' => 'user/themes/custom/blueprints.yaml',
+                'modified' => 1715056715
             ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
@@ -5197,6 +5201,33 @@ return [
                 'name' => 'themes.antimatter.dropdown.enabled',
                 'validation' => 'loose'
             ],
+            'themes.custom' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'loose'
+                ]
+            ],
+            'themes.custom.dropdown' => [
+                'type' => '_parent',
+                'name' => 'themes.custom.dropdown',
+                'form_field' => false
+            ],
+            'themes.custom.dropdown.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Dropdown in navbar',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'themes.custom.dropdown.enabled',
+                'validation' => 'loose'
+            ],
             'themes.quark' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5966,6 +5997,11 @@ return [
                 'antimatter' => [
                     'dropdown' => [
                         'enabled' => 'themes.antimatter.dropdown.enabled'
+                    ]
+                ],
+                'custom' => [
+                    'dropdown' => [
+                        'enabled' => 'themes.custom.dropdown.enabled'
                     ]
                 ],
                 'quark' => [

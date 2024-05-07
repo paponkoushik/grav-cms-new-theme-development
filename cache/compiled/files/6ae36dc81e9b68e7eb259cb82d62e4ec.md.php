@@ -2,16 +2,18 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/gravAdmin/user/pages/01.home/default.md',
-    'modified' => 1710761796,
-    'size' => 2418,
+    'modified' => 1715003053,
+    'size' => 2421,
     'data' => [
+        'storage_key' => '01.home',
         'header' => [
             'title' => 'Home',
             'body_classes' => 'title-center title-h1h2'
         ],
+        'root' => false,
         'frontmatter' => 'title: Home
 body_classes: title-center title-h1h2',
-        'markdown' => '# Say Hello to Grav!
+        'markdown' => '# Say Hello to Papon!
 ## installation successful...
 
 Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **Quark** theme to get you started.
@@ -48,6 +50,9 @@ Creating a new page is a simple affair in **Grav**.  Simply follow these simple 
 4. That is it! Reload your browser to see your new page in the menu.
 
 ! NOTE: The page will automatically show up in the Menu after the "Typography" menu item. If you wish to change the name that shows up in the Menu, simple add: `menu: My Page` between the dashes in the page content. This is called the YAML front matter, and it is where you configure page-specific options.
-'
+',
+        'slug' => 'home',
+        'name' => 'default.md',
+        'ordering' => true
     ]
 ];

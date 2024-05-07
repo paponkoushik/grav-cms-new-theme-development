@@ -1,0 +1,22 @@
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="{{ base_url }}">
+                <img src="{{ url('theme://assets/logo.jpg') }}" alt="Logo">
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                {% for page in pages.children.visible %}
+                    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+                    <li class="{{ current_page }}">
+                        <a href="{{ page.url }}">
+                            {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                            {{ page.menu }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

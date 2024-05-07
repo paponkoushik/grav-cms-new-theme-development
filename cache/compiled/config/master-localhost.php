@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1714991698,
-    'checksum' => '8aff841ba437b70af5639d971f95bb9d',
+    'timestamp' => 1715057217,
+    'checksum' => '82ca73a3848647906066da831524a306',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1714991698
+                'modified' => 1715057217
+            ],
+            'themes/custom' => [
+                'file' => 'user/config/themes/custom.yaml',
+                'modified' => 1715002378
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -95,6 +99,10 @@ return [
                 'file' => 'user/themes/antimatter/antimatter.yaml',
                 'modified' => 1714991476
             ],
+            'themes/custom' => [
+                'file' => 'user/themes/custom/custom.yaml',
+                'modified' => 1714996474
+            ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
                 'modified' => 1710761798
@@ -107,6 +115,12 @@ return [
                 'enabled' => true,
                 'dropdown' => [
                     'enabled' => false
+                ]
+            ],
+            'custom' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => true
                 ]
             ],
             'quark' => [
@@ -3885,7 +3899,7 @@ node_modules'
                 'dirs' => [
                     0 => 'page://'
                 ],
-                'theme' => 'antimatter',
+                'theme' => 'custom',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
